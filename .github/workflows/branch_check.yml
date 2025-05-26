@@ -1,0 +1,21 @@
+name: Branch format checker
+on: [pull_request]
+jobs:
+  Branch-Format-Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch files
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.13.3"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Check project structure
+        run: python3 .github/workflows-script/project_structure_check.py
