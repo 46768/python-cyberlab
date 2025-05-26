@@ -1,0 +1,5 @@
+name: python-cyberlab-env
+dependencies:
+  - conda-forge::python=3.13.3
+  - conda-forge::conda-pack=0.8.1
+  - conda-forge::pyyaml=6.0.2
