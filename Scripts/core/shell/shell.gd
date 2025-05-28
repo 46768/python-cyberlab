@@ -19,6 +19,7 @@ func _init() -> void:
 
 ## Run shell commands
 ##
+## Looks for a file with then name within the "PATH" env var to execute
 ## Program arguments are provided as envvar ("@1", "@2", "@3", ...) for scripts,
 ## "@1", "@2", "@3",  ... in SeqASM programs, and args[1:] for gdscript
 ## functions
