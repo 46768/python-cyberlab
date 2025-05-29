@@ -9,6 +9,10 @@ static func _parse_operand(tokens: PackedStringArray) -> Array:
 	pass
 
 
+static func _parse_label(lines: PackedStringArray) -> Dictionary[String, int]:
+	pass
+
+
 static func strip(
 	source: String,
 	rom: Dictionary[String, Variant]
