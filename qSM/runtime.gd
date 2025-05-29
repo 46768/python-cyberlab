@@ -2,7 +2,11 @@ class_name QSMRuntime
 extends RefCounted
 
 
-var flags: int = 0b0000
+# [2] sign flag
+# [1] zero flag
+# [0] halt flag
+var flags: int = 0b000
+
 var memory: Dictionary[String, Variant] = {}
 var program: Array[Array] = null
 var instruction_pointer: int = 0
