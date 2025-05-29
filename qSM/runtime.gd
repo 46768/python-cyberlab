@@ -8,7 +8,7 @@ extends RefCounted
 var flags: int = 0b000
 
 var memory: Dictionary[String, Variant] = {}
-var program: Array[Array] = null
+var program: Array[Array] = []
 var instruction_pointer: int = 0
 
 
