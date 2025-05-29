@@ -21,3 +21,7 @@ static func assemble(
 	rom: Dictionary[String, Variant]
 ) -> Array[Array]:
 	pass
+
+
+static func q_assemble(source: String) -> Array[Array]:
+	pass
