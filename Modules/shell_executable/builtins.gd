@@ -1,10 +1,10 @@
-func echo(args: PackedStringArray) -> Array:
+func echo(shell: Shell, args: PackedStringArray) -> Array:
 	pass
 
 
-func set(args: PackedStringArray) -> Array:
+func set(shell: Shell, args: PackedStringArray) -> Array:
 	pass
 
 
-func get(args: PackedStringArray) -> Array:
+func get(shell: Shell, args: PackedStringArray) -> Array:
 	pass
