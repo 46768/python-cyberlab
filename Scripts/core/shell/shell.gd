@@ -12,8 +12,15 @@ var environment_variable: Dictionary[String, String] = {}
 # Filesystem Data
 var filesystem: Variant = null
 
+# Other Info
+var parent_shell: Shell = null
+
 
 func _init() -> void:
+	pass
+
+
+func set_parent() -> void:
 	pass
 
 
